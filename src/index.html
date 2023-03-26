@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="/dist/output.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Outfit' rel='stylesheet'>
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Outfit';
+            box-sizing: border-box;
+        }
+        .bell{
+            margin: 28px;
+        }
+        .topnav{
+            justify-content: space-between;
+        }
+        .ETH{
+            margin: 25px;
+        }
+
+        td{
+            padding: 8px;
+        }
+        .flower{
+            position: absolute;
+            right: 135px;
+            top: 260px
+        }
+        .btn-follow{
+            background-color: blue;
+            width: 70px;
+            height: 30px;
+            color: white;
+            font-weight: 400;
+            margin-top: 40px;
+        }
+        .txtMurakami{
+            font-size: 12px;
+            color: grey;
+            margin-top: 10px;
+            padding-top: 15px;
+            border-top: 1px solid #E5E7EB;
+        }
+    </style>
+</head>
+<body>
+    <div class="flex border-4 w-full h-full bg-slate-50">
+        <div class="w-1/6 h-full px-4 py-8 border-solid border-r-2 border-gray-200 bg-slate-100">
+            <div class="flex flex-row">
+                <img src="../dist/Img/avt.png" class="w-12 h-12 rounded-full"/>
+                <div class="ml-4 mt-1">
+                    <p class="font-semibold" >Kevin Cranel</p>
+                    <p class="text-gray-400 text-xs">@kecrane</p>
+                </div>
+            </div>
+            <div class="flex flex-col mt-6">
+                <div class="mb-7">
+                    <p class="font-semibold mb-3">General</p>
+                    <div class="text-gray-400 py-2 hover:text-blue-500 hover:bg-slate-300 hover:rounded-2xl hover:cursor-pointer p-3"><i class='bx bx-compass mr-3'></i></i>Dashboard</div>
+                    <div class="text-gray-400 py-2 hover:text-blue-500 hover:bg-slate-300 hover:rounded-2xl hover:cursor-pointer p-3"><i class='bx bx-message-alt-dots mr-3'></i>Message</div>
+                    <div class="text-gray-400 py-2 hover:text-blue-500 hover:bg-slate-300 hover:rounded-2xl hover:cursor-pointer p-3"><i class='bx bx-cog mr-3'></i>Settings</div>
+                </div>
+                <div class="mb-7">
+                    <p class="font-semibold mb-3">Marketplace</p>
+                    <div class="text-gray-400 py-2 hover:text-blue-500 hover:bg-slate-300 hover:rounded-2xl hover:cursor-pointer p-3"><i class='bx bx-store-alt mr-3' ></i></i>Market</div>
+                    <div class="text-gray-400 py-2 hover:text-blue-500 hover:bg-slate-300 hover:rounded-2xl hover:cursor-pointer p-3"><i class='bx bx-popsicle mr-3' ></i>Active Bid</div>
+                    <div class="text-gray-400 py-2 hover:text-blue-500 hover:bg-slate-300 hover:rounded-2xl hover:cursor-pointer p-3"><i class='bx bx-heart mr-3'></i>Saved</div>
+                </div>
+                <div>
+                    <p class="font-semibold mb-3">My Profile</p>
+                    <div class="text-gray-400 py-2 hover:text-blue-500 hover:bg-slate-300 hover:rounded-2xl hover:cursor-pointer p-3"><i class='bx bx-command mr-3' ></i></i>Collection</div>
+                    <div class="text-gray-400 py-2 hover:text-blue-500 hover:bg-slate-300 hover:rounded-2xl hover:cursor-pointer p-3"><i class='bx bx-wallet mr-3' ></i>Wallet</div>
+                    <div class="text-gray-400 py-2 hover:text-blue-500 hover:bg-slate-300 hover:rounded-2xl hover:cursor-pointer p-3"><i class='bx bx-history mr-3'></i>History</div>
+                </div>
+                <div class="mt-28 bg-sky-500 w-48 h-50 rounded-2xl mx-2 relative">
+                    <div class="mt-4">
+                        <p class="font-semibold text-white text-center mb-3">Help Center</p>
+                        <p class="text-purple-200 text-center mb-8 text-sm">
+                        Having trouble in Enefti?
+                        Please contact us for more question
+                        </p>
+                        <div class="flex justify-center items-center w-28 h-9 bg-white m-auto rounded-xl mb-2 hover:scale-110 transition ease-in-out delay-200">
+                            <a href="#" class="text-xs text-blue-500 font-semibold ">Go to Help Center</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="w-5/6 h-full flex flex-col">
+            <div class="topnav w-full h-1/5 border-solid border-b-2 border-gray-200  bg-white flex flex-row justify-between">
+                <div class="w-1/2 mx-5 my-6 flex flex-row items-center justify-center bg-gray-200 rounded-xl">
+                    <i class='bx bx-search px-4'></i>
+                    <input class="w-full focus:outline-none bg-gray-200" type="search" placeholder="Search items, collections, and users">
+                </div>
+                <div class=" w-96 h-24 flex flex-row">
+                    <div class="ETH w-32 h-12 flex justify-center items-center rounded-lg border-solid border-2 border-gray-50 ">
+                        <i class='bx bx-expand-vertical mr-4'></i>
+                        <p>3,412 ETH</p>
+                    </div>
+                    <div class="flex justify-center items-center w-10 h-10 border-solid border-2 border-gray-50 rounded-full hover:cursor-pointer hover:scale-110 transition ease-in-out delay-200 bell">
+                        <i class='bx bx-bell'></i>
+                    </div>
+                    <div class="flex flex-row w-10 h-10 justify-center items-center m-auto">
+                        <img src="../dist/Img/avt.png" alt="">
+                        <i class='bx bx-chevron-down ml-4'></i>
+                    </div>
+                </div>
+            </div>
+            <div class="w-full h-4/5 flex flex-row">
+                <div class="w-3/4 h-full p-6 border-solid border-r-2 border-gray-200 flex flex-col ">
+                    <div class="w-full h-1/3 bg-sky-600 rounded-xl">
+                        <div class="p-5">
+                            <p class="p-3 font-semibold text-white text-3xl">Create and Sell Extraordinary NFTs</p>
+                            <p class="pl-3 py-3 text-white text-xs">The world's first and largest digital marketplace for crypto NFTs</p>
+                            <div class="flex flex-row p-3">
+                                <button class="bg-white font-semibold text-sm mr-5 w-28 h-10 text-blue-600 rounded-md hover:scale-95 transition ease-in-out delay-200">
+                                    Explore More
+                                </button>
+                                <button class="w-28 font-semibold text-sm text-white rounded-md border-solid border-2 border-white hover:scale-95 transition ease-in-out delay-200">
+                                    Sell Artwork
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex flex-row justify-between px-3 py-4 mt-5">
+                        <h1 class="text-black font-semibold text-xl">Trending Auction</h1>
+                        <a href="#" class="text-blue-400">View All</a>
+                    </div>
+                    <div class="flex flex-row  w-full h-1/3 justify-around bg-slate-50 rounded-xl py-3">
+                        <div class="flex flex-col bg-white rounded-xl border-solid border border-white px-2">
+                            <img src="../dist/Img/Rectangle 2044.png" class="hover:cursor-pointer hover:scale-110 transition ease-in-out delay-200 bell" alt="">
+                            <div class="py-4 px-4">
+                                <h1 class="font-semibold text-base">The Unfortable Facer</h1>
+                                <p class="text-xs text-gray-300">By Bane Riccardo</p>
+                            </div>
+                            <div class="flex flex-row justify-between p-3">
+                                <div >
+                                    <p class="text-xs text-gray-300">Current Bid</p>
+                                    <div class="flex flex-row justify-between items-center text-xs">
+                                        <i class='bx bx-expand-vertical ml-2 mr-2 text-blue-500'></i>
+                                        <p class="font-semibold">18,99 ETH</p>
+                                    </div>
+                                </div>
+                                <button class="bg-blue-700 w-24  text-white rounded-md hover:scale-95 transition ease-in-out delay-200">Place a Bid</button>
+                            </div>
+                        </div>
+                        <div class="flex flex-col bg-white rounded-xl border-solid border border-white px-2">
+                            <img src="../dist/Img/Rectangle 2044 (1).png" class="hover:cursor-pointer hover:scale-110 transition ease-in-out delay-200 bell" alt="">
+                            <div class="py-4 px-4">
+                                <h1 class="font-semibold text-base">Mad Ballot Holder</h1>
+                                <p class="text-xs text-gray-300">By Angelina Cruzz</p>
+                            </div>
+                            <div class="flex flex-row justify-between p-3">
+                                <div >
+                                    <p class="text-xs text-gray-300">Current Bid</p>
+                                    <div class="flex flex-row justify-between items-center text-xs">
+                                        <i class='bx bx-expand-vertical ml-2 mr-2 text-blue-500'></i>
+                                        <p class="font-semibold">4,32 ETH</p>
+                                    </div>
+                                </div>
+                                <button class="bg-blue-700 w-24  text-white rounded-md hover:scale-95 transition ease-in-out delay-200">Place a Bid</button>
+                            </div>
+                        </div><div class="flex flex-col bg-white rounded-xl border-solid border border-white px-2">
+                            <img src="../dist/Img/Rectangle 2044 (2).png" class="hover:cursor-pointer hover:scale-110 transition ease-in-out delay-200 bell" alt="">
+                            <div class="py-4 px-4">
+                                <h1 class="font-semibold text-base">Pile of Many Plates</h1>
+                                <p class="text-xs text-gray-300">By Ralphi Arness</p>
+                            </div>
+                            <div class="flex flex-row justify-between p-3">
+                                <div >
+                                    <p class="text-xs text-gray-300">Current Bid</p>
+                                    <div class="flex flex-row justify-between items-center text-xs">
+                                        <i class='bx bx-expand-vertical ml-2 mr-2 text-blue-500'></i>
+                                        <p class="font-semibold">4,32 ETH</p>
+                                    </div>
+                                </div>
+                                <button class="bg-blue-700 w-24  text-white rounded-md hover:scale-95 transition ease-in-out delay-200">Place a Bid</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex flex-row justify-between py-4 px-3 mt-8">
+                        <h1 class="text-black font-semibold text-xl">Top Collection</h1>
+                        <a href="#" class="text-blue-400">View All</a>
+                    </div>
+                    <table class="">                   
+                            <tr class="text-xs text-gray-400 font-normal ">
+                                <td>Collection</td>
+                                <td>Volume</td>
+                                <td>24h %</td>
+                                <td>Floor Price</td>
+                                <td>Owners</td>
+                                <td>Items</td>
+                            </tr>
+                            <tr class="border-solid border-b border-stone-100">
+                                <td class="text-xs">
+                                    <div class="flex flex-row items-center">
+                                        <img src="../dist/Img/Ellipse 1018.png" class="w-6 h-6 rounded-full mr-2"/>
+                                        <div class="">
+                                            <p class="font-semibold" >Doodle Lucu</p>
+                                            <p class="text-gray-400 text-xs">By Doodles</p>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="text-xs">
+                                    <div class="flex flex-row items-center">
+                                        <i class='bx bx-expand-vertical mr-2 text-blue-500'></i>
+                                        <p class="font-semibold">14,32</p>
+                                    </div>
+                                </td>
+                                <td class="text-xs text-green-500">+20,4%</td>
+                                <td class="text-xs">
+                                    <div class="flex flex-row items-center ">
+                                        <i class='bx bx-expand-vertical mr-2 text-blue-500'></i>
+                                        <p class="font-semibold">2,3</p>
+                                    </div>
+                                </td>
+                                <td class="text-xs">2,2K</td>
+                                <td class="text-xs">18</td>
+                            </tr>
+                            <tr>
+                                <td class="text-xs">
+                                    <div class="flex flex-row items-center">
+                                        <img src="../dist/Img/Ellipse 1018 (5).png" class="w-6 h-6 rounded-full mr-2"/>
+                                        <div class="">
+                                            <p class="font-semibold" >Kimawi Genesis</p>
+                                            <p class="text-gray-400 text-xs">By Kimawi - Japan</p>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="text-xs">
+                                    <div class="flex flex-row items-center">
+                                        <i class='bx bx-expand-vertical mr-2 text-blue-500'></i>
+                                        <p class="font-semibold">6,11</p>
+                                    </div>
+                                </td>
+                                <td class="text-xs text-red-500">-18,2%</td>
+                                <td class="text-xs">
+                                    <div class="flex flex-row items-center ">
+                                        <i class='bx bx-expand-vertical mr-2 text-blue-500'></i>
+                                        <p class="font-semibold">2,3</p>
+                                    </div>
+                                </td>
+                                <td class="text-xs">1,9K</td>
+                                <td class="text-xs">21</td>
+                            </tr>
+                    </table>
+                </div>
+                <div class="w-1/4 h-full">
+                    <div class="flex justify-between items-center p-3 mt-4">
+                        <h1 class="text-black font-semibold text-base">Featured Creators</h1>
+                        <a href="#" class="text-blue-400 text-xs">See All</a>
+                    </div>
+                    <div class="flex flex-col p-3 mx-5 bg-white rounded-xl">
+                        <div>
+                            <img src="../dist/Img/Rectangle 2043.png" class="absolute m-auto " alt="">
+                            <img src="../dist/Img/Ellipse 1019.png" class="flower" alt="">
+                        </div>
+                        <div class="flex flex-row items-center justify-between">
+                            <div class="flex flex-col mt-10 ml-5">
+                                <p class="font-semibold text-sm" >Murakami Flowers<i class='bx bxs-badge-check text-blue-600 ml-2' ></i></p>
+                                <p class="text-gray-400 text-xs">@mftmkkus</p>
+                            </div>
+                            <div>
+                                <button class="btn-follow bg-blue-600 text-sm  rounded-xl  hover:scale-95 transition ease-in-out delay-200">
+                                    Follow
+                                </button>
+                            </div>
+                        </div>
+                        <div class="txtMurakami ">
+                            <p>Murakami.Flowers is a work in which artist Takashi Murakami's representative artwork...</p>
+                        </div>
+                    </div>
+                    <div class="flex justify-between items-center p-3 mt-4">
+                        <h1 class="text-black font-semibold text-sm">Recent Activity</h1>
+                        <a href="#" class="text-blue-400 text-xs">See All</a>
+                    </div>
+                    <div class="flex flex-row items-center  justify-between  border-solid border-b border-stone-100 mx-5 py-3">
+                        <div class="flex flex-row items-center">
+                            <img src="../dist/Img/Ellipse 1018 (6).png" class="w-8 h-8 rounded-full mr-2"/>
+                            <div class="text-xs">
+                                <p class="font-semibold text-sm" >Uzachi #4390</p>
+                                <p class="text-gray-400 text-xs">From Ragnarok Meta</p>
+                            </div>
+                        </div>
+                        <div class="flex flex-row items-center text-xs">
+                            <i class='bx bx-expand-vertical mr-2 text-blue-500'></i>
+                            <p class="font-semibold">2.15 ETH</p>
+                        </div>
+                    </div>
+                    <div class="flex flex-row items-center  justify-between  border-solid border-b border-stone-100 mx-5 py-3">
+                        <div class="flex flex-row items-center">
+                            <img src="../dist/Img/Ellipse 1018 (7).png" class="w-8 h-8 rounded-full mr-2"/>
+                            <div class="text-xs">
+                                <p class="font-semibold text-sm" >Doodles #3486</p>
+                                <p class="text-gray-400 text-xs">From Doodles</p>
+                            </div>
+                        </div>
+                        <div class="flex flex-row items-center text-xs">
+                            <i class='bx bx-expand-vertical mr-2 text-blue-500'></i>
+                            <p class="font-semibold">4.42 ETH</p>
+                        </div>
+                    </div>
+                    <div class="flex flex-row items-center  justify-between  border-solid border-b border-stone-100 mx-5 py-3">
+                        <div class="flex flex-row items-center">
+                            <img src="../dist/Img/Ellipse 1018 (1).png" class="w-8 h-8 rounded-full mr-2"/>
+                            <div class="text-xs">
+                                <p class="font-semibold text-sm" >Murakami #2766</p>
+                                <p class="text-gray-400 text-xs">From Murakami</p>
+                            </div>
+                        </div>
+                        <div class="flex flex-row items-center text-xs">
+                            <i class='bx bx-expand-vertical mr-2 text-blue-500'></i>
+                            <p class="font-semibold">1.08 ETH</p>
+                        </div>
+                    </div>
+                    <div class="flex flex-row items-center  justify-between  border-solid border-b border-stone-100 mx-5 py-3">
+                        <div class="flex flex-row items-center">
+                            <img src="../dist/Img/Ellipse 1018 (2).png" class="w-8 h-8 rounded-full mr-2"/>
+                            <div class="text-xs">
+                                <p class="font-semibold text-sm" >Doodles #2761</p>
+                                <p class="text-gray-400 text-xs">From Murakami</p>
+                            </div>
+                        </div>
+                        <div class="flex flex-row items-center text-xs">
+                            <i class='bx bx-expand-vertical mr-2 text-blue-500'></i>
+                            <p class="font-semibold">4.4 ETH</p>
+                        </div>
+                    </div>
+                    <div class="flex flex-row items-center  justify-between  border-solid border-b border-stone-100 mx-5 py-3">
+                        <div class="flex flex-row items-center">
+                            <img src="../dist/Img/Ellipse 1018 (3).png" class="w-8 h-8 rounded-full mr-2"/>
+                            <div class="text-xs">
+                                <p class="font-semibold text-sm" >Peachy Puch#22</p>
+                                <p class="text-gray-400 text-xs">From Mindblowonstudio</p>
+                            </div>
+                        </div>
+                        <div class="flex flex-row items-center text-xs">
+                            <i class='bx bx-expand-vertical mr-2 text-blue-500'></i>
+                            <p class="font-semibold">5.62 ETH</p>
+                        </div>
+                    </div>
+                    <div class="flex flex-row items-center  justify-between  border-solid border-b border-stone-100 mx-5 py-3">
+                        <div class="flex flex-row items-center">
+                            <img src="../dist/Img/Ellipse 1018 (4).png" class="w-8 h-8 rounded-full mr-2"/>
+                            <div class="text-xs">
+                                <p class="font-semibold text-sm" >Gemmy #3723</p>
+                                <p class="text-gray-400 text-xs">From GemmySolana</p>
+                            </div>
+                        </div>
+                        <div class="flex flex-row items-center text-xs">
+                            <i class='bx bx-expand-vertical mr-2 text-blue-500'></i>
+                            <p class="font-semibold">5.32 ETH</p>
+                        </div>
+                    </div>
+                    <div class="flex flex-row items-center  justify-between  border-solid border-b border-stone-100 mx-5 py-3">
+                        <div class="flex flex-row items-center">
+                            <img src="../dist/Img/Ellipse 1018 (4).png" class="w-8 h-8 rounded-full mr-2"/>
+                            <div class="text-xs">
+                                <p class="font-semibold text-sm" >Gemmy #3723</p>
+                                <p class="text-gray-400 text-xs">From GemmySolana</p>
+                            </div>
+                        </div>
+                        <div class="flex flex-row items-center text-xs">
+                            <i class='bx bx-expand-vertical mr-2 text-blue-500'></i>
+                            <p class="font-semibold">5.32 ETH</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+</body>
+</html>
